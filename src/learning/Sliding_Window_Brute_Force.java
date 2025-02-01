@@ -1,12 +1,14 @@
-package Sliding_Window;
+package learning;
 
-public class Brute_Force_Approach {
+public class Sliding_Window_Brute_Force {
 
 	public static void main(String[] args) {
+		//Time complexity: O(k*n) as it contains two nested loops.		
 		
 		int [] array = {100, 200, 300, 400,500, 600};
-		int k= 3;
+		int k= 2;
 		int max = Integer.MIN_VALUE;
+		// System.out.println(max); output:- -2147483648
 
 		 for (int i = 0; i <=array.length - k; i++) {
 	            int sum = 0;
@@ -19,4 +21,5 @@ public class Brute_Force_Approach {
 	        }		
 		 System.out.println(max);
 	}
+
 }
