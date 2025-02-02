@@ -1,4 +1,6 @@
 package learning;
+//Input  : arr[] = {100, 200, 300, 400}, k = 2
+//Output : 700
 
 public class Sliding_Window {
 
@@ -8,8 +10,13 @@ public class Sliding_Window {
 		int [] array = {100, 200, 300, 400,500, 600};
 		int k= 2;
 
+		int max_sum = maxSum(array, k);
+		System.out.println(max_sum);
+	}
+
+	public static int maxSum(int [] array, int k) {
 		if(array.length<=k) {
-			return;
+			return -1;
 		}
 		int max_sum = 0;
 		
@@ -23,7 +30,6 @@ public class Sliding_Window {
 	         max_sum = Math.max(max_sum, window_sum);			
 		}
 		
-		System.out.println(max_sum);
+		return max_sum;
 	}
-
 }
