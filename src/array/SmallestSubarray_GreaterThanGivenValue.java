@@ -1,19 +1,21 @@
-package array;
 //Input: x = 51, arr[] = [1, 4, 45, 6, 0, 19]
 //Output: 3
 //Explanation: Minimum length subarray is [4, 45, 6]
 
-public class Smallest_Subarray_GreaterThan {
+
+package array;
+
+public class SmallestSubarray_GreaterThanGivenValue {
 
 	public static void main(String[] args) {
 		int []array = {1, 4, 45, 6, 0, 19};
 		int target = 51;
 		
-		int min_size = min(array, target);
+		int min_size = minLength(array, target);
 		System.out.println(min_size);
 	}
 	
-	public static int min(int [] array, int target) {
+	public static int minLength(int [] array, int target) {
 		int min_size =array.length;
 		
 		
