@@ -32,6 +32,6 @@ public class MaximumPointsObtainCards_1423 {
             minSum = Math.min(minSum, currentSum);
         }
 
-        return totalSum - minSum;  // Maximum points = Total sum - Minimum subarray sum
+        return totalSum - minSum;
     }
 }
