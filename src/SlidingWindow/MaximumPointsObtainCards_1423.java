@@ -12,9 +12,8 @@ public class MaximumPointsObtainCards_1423 {
 
 	public int maxScore(int[] cardPoints, int k) {
         int n = cardPoints.length;
-        int windowSize = n - k;  // Size of the window to be left out
+        int windowSize = n - k;
 
-        // Compute the sum of the first `windowSize` elements
         int minSubarraySum = 0;
         for (int i = 0; i < windowSize; i++) {
             minSubarraySum += cardPoints[i];
