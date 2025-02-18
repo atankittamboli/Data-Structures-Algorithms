@@ -24,8 +24,6 @@ public class MaximumPointsObtainCards_1423 {
         for (int num : cardPoints) {
             totalSum += num;
         }
-
-        // Sliding window: Min sum subarray of size `windowSize`
         
         int currentSum = minSubarraySum;
         int minSum = minSubarraySum;
