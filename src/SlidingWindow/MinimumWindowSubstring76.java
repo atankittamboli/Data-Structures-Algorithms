@@ -49,6 +49,7 @@ public class MinimumWindowSubstring76 {
 	            }
 	            right++;
 	        }
+
 	        return ans[0] == -1 ? "" : s.substring(ans[1], ans[2] + 1);
 	    }
 }
