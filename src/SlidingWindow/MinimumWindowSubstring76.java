@@ -21,7 +21,7 @@ public class MinimumWindowSubstring76 {
 
 	        int required = charCountT.size();
 	        int left = 0, right = 0, formed = 0;
-	        int[] ans = {-1, 0, 0}; // [window_length, left_index, right_index]
+	        int[] ans = {-1, 0, 0};
 
 	        HashMap<Character, Integer> windowCounts = new HashMap<>();
 
