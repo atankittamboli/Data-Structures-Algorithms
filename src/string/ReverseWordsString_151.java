@@ -1,9 +1,9 @@
 package string;
 
-public class ReverseWordsString151 {
+public class ReverseWordsString_151 {
 
 	public static void main(String[] args) {
-		ReverseWordsString151 sol = new ReverseWordsString151();
+		ReverseWordsString_151 sol = new ReverseWordsString_151();
 	        System.out.println(sol.reverseWords("  the sky is  blue  ")); // Output: "blue is sky the"
 	        System.out.println(sol.reverseWords(" hello world ")); // Output: "world hello"
 	        System.out.println(sol.reverseWords("a good   example")); // Output: "example good a"
