@@ -19,7 +19,6 @@ public class ReverseWordsString_151 {
             result.append(words[i]);
             if (i > 0) result.append(" ");
         }
-
         return result.toString();
     }
 
