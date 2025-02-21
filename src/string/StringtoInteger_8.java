@@ -9,8 +9,6 @@ public class StringtoInteger_8 {
 	        System.out.println(sol.myAtoi("4193 with words"));// Output: 4193
 	        System.out.println(sol.myAtoi("words 987"));      // Output: 0
 	        System.out.println(sol.myAtoi("-91283472332"));   // Output: -2147483648 (Integer.MIN_VALUE)
-	   
-
 	}
 
 	public int myAtoi(String s) {
