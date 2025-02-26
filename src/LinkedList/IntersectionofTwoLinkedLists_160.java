@@ -3,7 +3,8 @@ package LinkedList;
 public class IntersectionofTwoLinkedLists_160 {
 
 	public static void main(String[] args) {
-
+		
+		
 	}
 
 	public static Node getIntersectionNode(Node headA, Node headB) {
