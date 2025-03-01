@@ -7,8 +7,8 @@ import java.util.Stack;
 public class NextGreaterElement_I_496 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
+		
 	}
 
 	 public static int[] nextGreaterElement(int[] nums1, int[] nums2) {
