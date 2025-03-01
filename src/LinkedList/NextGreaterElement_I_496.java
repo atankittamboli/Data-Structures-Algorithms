@@ -7,6 +7,7 @@ import java.util.Stack;
 public class NextGreaterElement_I_496 {
 
 	public static void main(String[] args) {
+
 		
 	}
 
