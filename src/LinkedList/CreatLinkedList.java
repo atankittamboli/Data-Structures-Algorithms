@@ -7,9 +7,13 @@ public class CreatLinkedList {
 		head.next = new Node(20);
 		head.next.next = new Node(30);
 		head.next.next.next = new Node(40);
-		
+						
+		System.out.println(" ----------- Create List with 4 Node -----------");
 		traverseList(head);
-//		recursiveTraverseList(head);
+		System.out.println(" ----------- Create List with 100 Node -----------");
+		traverseList(createList());
+		System.out.println(" ----------- print LinkedList with Recursive Method -----------");
+		recursiveTraverseList(head);
 	}
 	
 	public static void traverseList(Node head) {		
@@ -23,9 +27,19 @@ public class CreatLinkedList {
 		if(head == null) {
 			return;
 		}
-		System.out.println(head.data);
-		
+		System.out.println(head.data);		
 		recursiveTraverseList(head.next);
 	}
+	
+	public static Node createList() {
+		Node node = new Node(1);
+		Node currNode = node;
 
+		for (int i = 2; i <= 100; i++) {
+			currNode.next = new Node(i);
+			currNode = currNode.next;
+		}
+		return node;
+	}
+	
 }
