@@ -19,7 +19,7 @@ public class CopyListwithRandomPointer_138 {
 	        
 	        // Step 1: Copy all nodes
 	        while (curr != null) {
-	            map.put(curr, new Node(curr.val));
+	            map.put(curr, new Node(curr.data));
 	            curr = curr.next;
 	        }
 
@@ -27,7 +27,7 @@ public class CopyListwithRandomPointer_138 {
 	        curr = head;
 	        while (curr != null) {
 	            map.get(curr).next = map.get(curr.next);
-	            map.get(curr).random = map.get(curr.data);
+	            map.get(curr).next = map.get(curr.data);
 	            curr = curr.next;
 	        }
 	        
