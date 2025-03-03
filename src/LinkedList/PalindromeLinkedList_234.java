@@ -21,7 +21,7 @@ public class PalindromeLinkedList_234 {
 	    Node firstHalf = head;
 
 	    while (secondHalf != null) {
-	        if (firstHalf.val != secondHalf.val) return false;
+	        if (firstHalf.data != secondHalf.data) return false;
 	        firstHalf = firstHalf.next;
 	        secondHalf = secondHalf.next;
 	    }
