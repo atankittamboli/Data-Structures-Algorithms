@@ -13,19 +13,36 @@ public class DeletionLinkedList {
 		System.out.println(" ----------- Deletion in First -----------");
 		Node node = deletionNodeFirst(head);
 		traverseList(node);
+		System.out.println(" ----------- Deletion Node at Specific position -----------");
+		int pos = 2;
+		Node nodePosition = DeletionNodeSpecificPosition(head, pos);
+		traverseList(nodePosition);
 		System.out.println(" ----------- Deletion in last -----------");
 		Node nodeLast = deletionNodeLast(head);
 		traverseList(nodeLast);
-		System.out.println(" ----------- Deletion Node at Specific position -----------");
-		int pos = 3;
-		Node nodePosition = DeletionNodeSpecificPosition(head, pos);
-		traverseList(nodePosition);
-
-
 
 	}
 
-	public static Node DeletionNodeSpecificPosition(Node head, int pos) {		
+	public static Node DeletionNodeSpecificPosition(Node head, int pos) {
+		
+		Node temp = head;
+		Node previousNode = null;
+		
+		if(pos==1) {
+			head = head.next;
+			return head;
+		}
+		
+		for(int i=1; temp!=null && i<pos  ; i++) {
+			previousNode = temp;
+			temp = temp.next;
+		}
+		
+		if(temp!=null) {
+			previousNode.next = temp.next;
+		}
+		
+		return head;
 	}
 
 	public static Node deletionNodeLast(Node head) {		
@@ -38,8 +55,6 @@ public class DeletionLinkedList {
 	}
 	
 	public static Node deletionNodeFirst(Node head) {		
-		Node temp = head;
-		temp = null;
 		head = head.next;
 		 return head;
 	}
