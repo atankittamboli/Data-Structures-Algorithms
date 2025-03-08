@@ -5,7 +5,6 @@ public class DivideTwoIntegers_29 {
 	public static void main(String[] args) {
 		 int dividend = 10, divisor = 3;
 	     System.out.println(divide(dividend, divisor)); // Output: 3
-
 	}
 
 	public static int divide(int dividend, int divisor) {
